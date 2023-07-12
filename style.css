@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.5;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid pink;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+  cursor: pointer;
+  
+}
+
+.photo-card {
+  flex: 1;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+.photo-card img{
+  width: 250px;
+  height: 200px;
+  border-radius: 10%;
+}
+
+.photo-card:hover {
+  transform: scale(1.05);
+}
+
+.photo-card h2 {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1.2rem;
+}
+footer {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+.social-media a{
+  font-size: 2rem;
+  color: #f0f0f0;
+  margin-right: 20px;
+}
+
+.social-media a:hover{
+  padding-right: 8px;
+}
